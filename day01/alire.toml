@@ -1,0 +1,13 @@
+name = "day01"
+description = "Advent of Code 2015, day 01"
+version = "0.1.0-dev"
+
+authors = ["John Perry"]
+maintainers = ["John Perry <devotus@yahoo.com>"]
+maintainers-logins = ["johnperry-math"]
+licenses = "CC-BY-SA-3.0"
+website = ""
+tags = ["advent-of-code", "ada", "2015"]
+
+[[depends-on]]
+gnatprove = "^14.1.1"
