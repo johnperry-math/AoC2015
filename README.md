@@ -10,6 +10,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🎁 [Day 2](#-day-2-i-was-told-there-would-be-no-math): I Was Told There Would Be No Math
   * 🏠 [Day 3](#-day-3-perfectly-spherical-houses-in-a-vacuum): Perfectly Spherical Houses in a Vacuum
   * 🪙 [Day 4](#-day-4-the-ideal-stocking-stuffer): The Ideal Stocking Stuffer
+  * 🧵 [Day 5](#-day-5-doesnt-he-have-intern-elves-for-this): Doesn't He Have Intern-Elves For This?
 
 ## Problems in order of appearance
 
@@ -133,3 +134,21 @@ Once that was out of the way and tested,
 I wrote a solution for the puzzle that worked on the first try.
 -- More than 12 hours later!!!
 -- But not 12 hours of work; I spent several hours with family.
+
+### 🧵 Day 5: Doesn't He Have Intern-Elves For This?
+
+Santa has to decide which... _strings?!?_ ... are naughty and nice.
+
+In part 1, you apply one rule.
+
+In part 2, you apply some revised rules, because the the old rules
+"are all clearly ridiculous." (As if these are any better...)
+
+#### Unusual tools
+After solving it once, I rewrote it so that:
+* Every subprogram is a function.
+* Functions used reduction expressions (`'Reduce`) when appropriate
+  (an Ada 2022 feature I haven't used nearly often enough).
+
+#### Experience
+Fun and easy, especially after Day 4...
