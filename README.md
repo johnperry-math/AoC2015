@@ -95,7 +95,7 @@ In part 2, we do the same, but for six 0's.
 
 #### Experience
 
-# 😲
+### 😲
 
 umadbro?
 
