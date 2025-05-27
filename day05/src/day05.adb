@@ -40,21 +40,16 @@ procedure Day05 is
    --  SECTION
    --  Part 1
 
-   function At_Least_Three_Vowels (Candidate : File_String) return Boolean is
-      Sum : Natural := 0;
-   begin
-      for Each of Candidate loop
-         if Each = 'a'
-           or else Each = 'e'
-           or else Each = 'i'
-           or else Each = 'o'
-           or else Each = 'u'
-         then
-            Sum := @ + 1;
-         end if;
-      end loop;
-      return Sum >= 3;
-   end At_Least_Three_Vowels;
+   function Is_Vowel (C : Character) return Boolean
+   is (C = 'a'
+       or else C = 'e'
+       or else C = 'i'
+       or else C = 'o'
+       or else C = 'u');
+
+   function At_Least_Three_Vowels (Candidate : File_String) return Boolean
+   is ([for C of Candidate => (if Is_Vowel (C) then 1 else 0)]'Reduce ("+", 0)
+       >= 3);
 
    function At_Least_One_Repeated_Letter
      (Candidate : File_String) return Boolean
@@ -73,16 +68,9 @@ procedure Day05 is
        and then At_Least_One_Repeated_Letter (Candidate)
        and then All_Pairs_Valid (Candidate));
 
-   function Part_1 return Natural is
-      Result : Natural := 0;
-   begin
-      for Candidate of Candidates loop
-         if Is_Nice (Candidate) then
-            Result := @ + 1;
-         end if;
-      end loop;
-      return Result;
-   end Part_1;
+   function Part_1 return Natural
+   is ([for Candidate of Candidates => (if Is_Nice (Candidate) then 1 else 0)]'
+         Reduce ("+", 0));
 
    --  SECTION
    --  Part 2
@@ -98,18 +86,12 @@ procedure Day05 is
    is (for some Ith in Candidate'First .. Candidate'Last - 2
        => Candidate (Ith) = Candidate (Ith + 2));
 
-   function Part_2 return Natural is
-      Result : Natural := 0;
-   begin
-      for Candidate of Candidates loop
-         if At_Least_One_Nonoverlapping_Pair (Candidate)
-           and then At_Least_One_Near_Repetition (Candidate)
-         then
-            Result := @ + 1;
-         end if;
-      end loop;
-      return Result;
-   end Part_2;
+   function Part_2 return Natural
+   is ([for Candidate of Candidates
+        => (if At_Least_One_Nonoverlapping_Pair (Candidate)
+              and then At_Least_One_Near_Repetition (Candidate)
+            then 1
+            else 0)]'Reduce ("+", 0));
 
    --  SECTION
    --  main
