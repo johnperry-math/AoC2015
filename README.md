@@ -13,6 +13,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🧵 [Day 5](#-day-5-doesnt-he-have-intern-elves-for-this): Doesn't He Have Intern-Elves For This?
   * 💡 [Day 6](#-day-6-probably-a-fire-hazard): Probably a Fire Hazard
   * 🎛️ [Day 7](#️-day-7-some-assembly-required): Some Assembly Required
+  * 🪗 [Day 8](#-day-8-matchsticks): Matchsticks
 
 ## Problems in order of appearance
 
@@ -201,3 +202,18 @@ and help him figure out the new value of wire `a`.
 Once I worked out reading the input, this was relatively easy.
 In retrospect, I probably could have implemented it a little more easily,
 but it works fine, so I'll leave it.
+
+### 🪗 Day 8: Matchsticks
+Santa's list apparently contains strings with control characters
+to indicate formatting.
+
+In part 1, compute the amount of memory needed for the formatted string.
+
+In part 2, compute the amount of memory for a string with control characters
+that will generate the input string.
+
+#### Unusual tools
+None in particular.
+
+#### Experience
+Fun and easy.

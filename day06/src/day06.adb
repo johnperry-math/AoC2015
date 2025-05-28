@@ -1,3 +1,8 @@
+--  Advent of Code 2015
+--  John Perry
+--
+--  count the number of lights lit
+
 pragma Ada_2022;
 
 with Ada.Text_IO;

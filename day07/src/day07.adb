@@ -1,3 +1,8 @@
+--  Advent of Code 2015
+--  John Perry
+--
+--  work out the values of a network
+
 pragma Ada_2022;
 
 with Ada.Text_IO;
