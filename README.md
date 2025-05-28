@@ -11,6 +11,8 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🏠 [Day 3](#-day-3-perfectly-spherical-houses-in-a-vacuum): Perfectly Spherical Houses in a Vacuum
   * 🪙 [Day 4](#-day-4-the-ideal-stocking-stuffer): The Ideal Stocking Stuffer
   * 🧵 [Day 5](#-day-5-doesnt-he-have-intern-elves-for-this): Doesn't He Have Intern-Elves For This?
+  * 💡 [Day 6](#-day-6-probably-a-fire-hazard): Probably a Fire Hazard
+  * 🎛️ [Day 7](#️-day-7-some-assembly-required): Some Assembly Required
 
 ## Problems in order of appearance
 
