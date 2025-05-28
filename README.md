@@ -152,3 +152,50 @@ After solving it once, I rewrote it so that:
 
 #### Experience
 Fun and easy, especially after Day 4...
+
+
+### 💡 Day 6: Probably a Fire Hazard
+
+Santa gives you instructions for how to set up Christmas decorations.
+
+In part 1, follow the instructions and determine how many lights are lit.
+
+In part 2, you realize the instructions weren't written in English but in
+"Ancient Nordic Elvish". Follow the instructions again and report
+the total brightness.
+
+#### Unusual tools
+
+Nothing unusual.
+
+#### Experience
+
+Fun and easy. So much so that I went to Day 7, which...
+well, you can read about it there.
+
+### 🎛️ Day 7: Some Assembly Required
+
+A kid needs help with the electrical set Santa gave him.
+
+In part 1, you help him figure out the value of wire `a`.
+
+In part 2, you set wire `b` to that value, then reset the other wires
+and help him figure out the new value of wire `a`.
+
+#### Unusual tools
+
+* Used `Ada.Characters.Handling`'s `Is_Digit` function.
+* Thought of using a hash map to map wires to values and/or to gates,
+  but after the compiler annoyed me with a complaint that it didn't know the hash,
+  I decided to hack an array.
+* To keep the wire names relatively simple:
+  * I always used a 2-character string.
+  * For one-character wire naems, instead of using a space I used a backtick,
+    which is the character right before `a`.
+    This way, the array size doesn't grow too large with useless wire names.
+
+#### Experience
+
+Once I worked out reading the input, this was relatively easy.
+In retrospect, I probably could have implemented it a little more easily,
+but it works fine, so I'll leave it.
