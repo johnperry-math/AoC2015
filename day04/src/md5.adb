@@ -19,7 +19,7 @@ package body MD5 is
    --  SECTION
    --  common types not already defined
 
-   package Byte_IO is new Ada.Text_IO.Modular_IO (Num => MD5.Byte);
+   package Byte_IO is new IO.Modular_IO (Num => MD5.Byte);
 
    use all type Byte;
 
@@ -46,7 +46,7 @@ package body MD5 is
       for Ith in Hash'Range loop
          --  first use Ada to create an overly formatted string
          Byte_IO.Put (Temp, Hash (Ith), 16);
-         -- watch out for single-character values!
+         --  watch out for single-character values!
          Result (Ith * 2 + 1 .. Ith * 2 + 2) :=
            (if Hash (Ith) < 16 then "0" & Temp (5) else Temp (4 .. 5));
       end loop;
