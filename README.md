@@ -242,3 +242,27 @@ Fun and easy enough that I decided to make the function generic,
 as indicated above.
 I'm kind of surprised the map was so relatively small: only 8 locations,
 so at most 20,160 routes to check.
+
+### #️Day 10: Elves Look, Elves Say
+
+The elves are playing a game of [look-and-say](https://en.wikipedia.org/wiki/Look-and-say_sequence).
+
+In part 1, figure out how long the sequence of numbers will be after 40 turns.
+
+In part 2, figure out how long the sequence of numbers will be after 50 turns.
+Also watch a video of John Conway discussing the sequence, if it interests you.
+
+#### Unusual tools
+Like Day 09, one function solves both parts, but I didn't make it generic.
+
+#### Experience
+Fun and easy.
+I was expecting that I might need some trick to handle 50,
+especially since the video gives introduces us to
+the "atoms" of a look-and-say sequence, but that turned out to be unnecessary.
+
+Still, I remain sort-of-tempted to implement the
+[cosmological decay](https://en.wikipedia.org/wiki/Look-and-say_sequence#Cosmological_decay).
+
+**Qualifier** I accidentally typed `5` instead of `50` when I did Part 2,
+so I got the wrong answer.
