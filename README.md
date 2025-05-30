@@ -14,6 +14,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 💡 [Day 6](#-day-6-probably-a-fire-hazard): Probably a Fire Hazard
   * 🎛️ [Day 7](#️-day-7-some-assembly-required): Some Assembly Required
   * 🪗 [Day 8](#-day-8-matchsticks): Matchsticks
+  * 🕸️ [Day 9](#️-day-9-all-in-a-single-night): All in a Single Night
 
 ## Problems in order of appearance
 
@@ -217,3 +218,27 @@ None in particular.
 
 #### Experience
 Fun and easy.
+
+### 🕸️ Day 9: All in a Single Night
+
+Santa has a new list of locations.
+He needs to visit each location exactly once.
+
+In part 1, determine the shortest route.
+
+In part 2, determine the longest route.
+
+#### Unusual tools
+* Used the same code to solve Part 1 and Part 2,
+  distinguishing the approach by a parameter, `Shortest`,
+  which when true would minimize, and when false would maximize.
+* After writing that up, I decided it would be interesting to make it generic.
+  That gave me some trouble, since the generic
+  was not capturing the global `Map`,
+  so I made that a parameter.
+
+#### Experience
+Fun and easy enough that I decided to make the function generic,
+as indicated above.
+I'm kind of surprised the map was so relatively small: only 8 locations,
+so at most 20,160 routes to check.
