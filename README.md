@@ -254,7 +254,10 @@ In part 2, figure out how long the sequence of numbers will be after 50 turns.
 Also watch a video of John Conway discussing the sequence, if it interests you.
 
 #### Unusual tools
-Like Day 09, one function solves both parts, but I didn't make it generic.
+* Like Day 09, one function solves both parts, but I didn't make it generic.
+* I implemented the
+  [cosmological decay](https://en.wikipedia.org/wiki/Look-and-say_sequence#Cosmological_decay)
+  optimization.
 
 #### Experience
 Fun and easy.
