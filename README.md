@@ -15,6 +15,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🎛️ [Day 7](#️-day-7-some-assembly-required): Some Assembly Required
   * 🪗 [Day 8](#-day-8-matchsticks): Matchsticks
   * 🕸️ [Day 9](#️-day-9-all-in-a-single-night): All in a Single Night
+  * #️[Day 10](#️day-10-elves-look-elves-say): Elves Look, Elves Say
 
 ## Problems in order of appearance
 
