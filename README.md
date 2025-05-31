@@ -16,7 +16,8 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🪗 [Day 8](#-day-8-matchsticks): Matchsticks
   * 🕸️ [Day 9](#️-day-9-all-in-a-single-night): All in a Single Night
   * #️[Day 10](#️day-10-elves-look-elves-say): Elves Look, Elves Say
-  * 🟥 [Day 11](#-day-11-jsabacusframeworkio): JSAbacusFramework.io
+  * 🔐 [Day 11](#-day-11-corporate-policy): Corporate Policy
+  * 🟥 [Day 12](#-day-11-jsabacusframeworkio): JSAbacusFramework.io
 
 ## Problems in order of appearance
 
@@ -274,7 +275,7 @@ I implemented that approach later. It's _much_ faster.
 **Qualifier** I accidentally typed `5` instead of `50` when I did Part 2,
 so I got the wrong answer.
 
-### 🔐 Day 10: Corporate Policy
+### 🔐 Day 11: Corporate Policy
 
 Santa need a new password. Current policy is already insecure,
 and a new Security-Elf is determine to make it even more insecure.
@@ -294,7 +295,7 @@ None in particular.
 Fun and easy. Wow, I'm about halfway through the puzzles,
 and only Day 4 has been a problem.
 
-### 🟥 Day 11: JSAbacusFramework.io
+### 🟥 Day 12: JSAbacusFramework.io
 
 The elves need help balancing their books.
 Of course these books are in JSON format of course.
