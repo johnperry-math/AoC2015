@@ -261,8 +261,10 @@ I was expecting that I might need some trick to handle 50,
 especially since the video gives introduces us to
 the "atoms" of a look-and-say sequence, but that turned out to be unnecessary.
 
-Still, I remain sort-of-tempted to implement the
-[cosmological decay](https://en.wikipedia.org/wiki/Look-and-say_sequence#Cosmological_decay).
+~~Still, I remain sort-of-tempted to implement the
+[cosmological decay](https://en.wikipedia.org/wiki/Look-and-say_sequence#Cosmological_decay).~~
+
+I implemented that approach later. It's _much_ faster.
 
 **Qualifier** I accidentally typed `5` instead of `50` when I did Part 2,
 so I got the wrong answer.
