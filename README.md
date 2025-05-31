@@ -16,6 +16,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🪗 [Day 8](#-day-8-matchsticks): Matchsticks
   * 🕸️ [Day 9](#️-day-9-all-in-a-single-night): All in a Single Night
   * #️[Day 10](#️day-10-elves-look-elves-say): Elves Look, Elves Say
+  * 🟥 [Day 11](#-day-11-jsabacusframeworkio): JSAbacusFramework.io
 
 ## Problems in order of appearance
 
@@ -272,3 +273,52 @@ I implemented that approach later. It's _much_ faster.
 
 **Qualifier** I accidentally typed `5` instead of `50` when I did Part 2,
 so I got the wrong answer.
+
+### 🔐 Day 10: Corporate Policy
+
+Santa need a new password. Current policy is already insecure,
+and a new Security-Elf is determine to make it even more insecure.
+
+(Admittedly, the Puzzle Master doesn't put it quite that way.)
+
+In part 1, you find the next password that meets all the insecurity requirements.
+
+In part 2, you find the one after that.
+
+#### Unusual tools
+
+None in particular.
+
+#### Experience
+
+Fun and easy. Wow, I'm about halfway through the puzzles,
+and only Day 4 has been a problem.
+
+### 🟥 Day 11: JSAbacusFramework.io
+
+The elves need help balancing their books.
+Of course these books are in JSON format of course.
+
+In part 1, you sum all the numbers that appear.
+
+In part 2, you sum all the numbers that appear in object that **do not**
+have a "red" property.
+
+#### Unusual tools
+I was tempted to use the JSON alire crate, but I resisted.
+Instead, I just read through the file to obtain the numbers for part 1,
+then parsed it recursively for part 2, jettisoning intermediate computations
+whenever a red object was detected.
+That's pretty easy since it always looks like the string `":red"`:
+the input is one line, with no spaces.
+
+#### Experience
+Fun, not quite easy.
+As noted, I briefly considered using the JSON crate, then decided against it.
+So I had to write a recursive descent parser for braces, which wasn't too hard,
+but wasn't trivial.
+In fact, my first implementation returned the wrong value from `Balance`
+(it balances braces): since it always increments,
+and the function was supposed to return the position of `}`,
+the final position value was one _past_ the `}`,
+and I wasn't taking that into account.
