@@ -18,6 +18,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * #️[Day 10](#️day-10-elves-look-elves-say): Elves Look, Elves Say
   * 🔐 [Day 11](#-day-11-corporate-policy): Corporate Policy
   * 🟥 [Day 12](#-day-11-jsabacusframeworkio): JSAbacusFramework.io
+  * 🍽️ [Day 13](#️-day-13-knights-of-the-dinner-table): Knights of the Dinner Table
 
 ## Problems in order of appearance
 
@@ -323,3 +324,34 @@ In fact, my first implementation returned the wrong value from `Balance`
 and the function was supposed to return the position of `}`,
 the final position value was one _past_ the `}`,
 and I wasn't taking that into account.
+
+### 🍽️ Day 13: Knights of the Dinner Table
+
+You need to seat your family at the dinner table for the feast,
+but each member likes some members more than others.
+You want to maximize their happiness.
+
+In part 1, you seat everyone except you.
+
+In part 2, you seat yourself, as well.
+
+#### Unusual tools
+
+* Recursion
+* All functions work for both parts,
+  with different solution activated by parameter.
+
+#### Experience
+
+Fun, not quite easy. I kept getting part 1 wrong, even when I was doing part 2!
+* I forgot to consider both directions of happiness:
+  if A sits next to B, you can't just consider whether A is happier or sadder,
+  but also B.
+* I forgot to consider that the table is a circle:
+  you have to consider the first and last elements, as well.
+* `Read_Input` wasn't properly checking for negatives.
+* When adapting for part 2, I didn't take into account
+  that the test for the base of recursion is now different in part 1
+  than it was before.
+
+Despite that, I solved both puzzles in 30 minutes.
