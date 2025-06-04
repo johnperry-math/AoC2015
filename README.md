@@ -19,6 +19,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🔐 [Day 11](#-day-11-corporate-policy): Corporate Policy
   * 🟥 [Day 12](#-day-11-jsabacusframeworkio): JSAbacusFramework.io
   * 🍽️ [Day 13](#️-day-13-knights-of-the-dinner-table): Knights of the Dinner Table
+  * 🦌 [Day 14](#-day-14-reindeer-olympics): Reindeer Olympics
 
 ## Problems in order of appearance
 
@@ -355,3 +356,31 @@ Fun, not quite easy. I kept getting part 1 wrong, even when I was doing part 2!
   than it was before.
 
 Despite that, I solved both puzzles in 30 minutes.
+
+### 🦌 Day 14: Reindeer Olympics
+
+The reindeer are having a race. Sometimes they fly; sometimes they rest.
+
+In part 1, you help Santa determine which reindeer flies furthest after 2,503 seconds.
+
+In part 2, you help Santa determine which reindeer has held the lead the longest.
+
+#### Unusual tools
+
+* All functions work for both parts, with different solution activated by parameter.
+
+#### Experience
+
+Fun, should have been easy, but:
+
+> Premature optimization is the root of all evil. (Donald Knuth)
+
+I decided to implement a "clever" approach that, instead of stepping 1 second at a time,
+would step to the time when the next reindeer status changed.
+It was great, but for the fact that it kept giving me the wrong answer,
+because when going from the penultimate step to the final step,
+I added the wrong time delta.
+I missed it with the example because both reindeer are resting in the example.
+
+After finally getting that worked out, I moved on to part 2 and discovered that
+you have to step by 1 second, anyway. 🤬🤬🤬 Bye-bye, not-so-elegant solution...
