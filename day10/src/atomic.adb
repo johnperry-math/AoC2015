@@ -667,20 +667,28 @@ package body Atomic is
       raise Invalid_Sequence;
    end Identify_Atom_For;
 
-   function Decay (Sequence : Elem_Vector) return Elem_Vector is
-      Result : Elem_Vector;
+   function Decay (Count : Elem_Count_Array) return Elem_Count_Array is
+      Result : Elem_Count_Array := [others => 0];
    begin
-      for Element of Sequence loop
-         Result.Append (Decays_Into (Element));
+      for Element in Element_Enum when Count (Element) > 0 loop
+         declare
+            Decomposition : constant Elem_Vector := Decays_Into (Element);
+         begin
+            for Elem of Decomposition loop
+               Result (Elem) := @ + Count (Element);
+            end loop;
+         end;
       end loop;
       return Result;
    end Decay;
 
-   function Expanded_Length (Sequence : Elem_Vector) return Natural is
-      Result : Natural := 0;
+   function Expanded_Length (Count : Elem_Count_Array) return Element_Count is
+      Result : Element_Count := 0;
    begin
-      for Element of Sequence loop
-         Result := Result + Natural (Sequences (Element).Length);
+      for Element in Element_Enum loop
+         Result :=
+           Result
+           + Element_Count (Sequences (Element).Length) * Count (Element);
       end loop;
       return Result;
    end Expanded_Length;

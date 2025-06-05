@@ -20,21 +20,27 @@ procedure Day10 is
 begin
    IO.Put_Line ("Atomic expansion first!");
    declare
-      Sequence : Atomic.Elem_Vector :=
-        [Atomic.Identify_Atom_For (Common.Puzzle_Input)];
+      Count : Atomic.Elem_Count_Array := [others => 0];
    begin
+      Count (Atomic.Identify_Atom_For (Common.Puzzle_Input)) := 1;
       for Each in 1 .. 40 loop
-         Sequence := Atomic.Decay (Sequence);
+         Count := Atomic.Decay (Count);
       end loop;
       IO.Put_Line
         ("After 40 iterations, the length of the sequence is"
-         & Atomic.Expanded_Length (Sequence)'Image);
+         & Atomic.Expanded_Length (Count)'Image);
       for Each in 1 .. 10 loop
-         Sequence := Atomic.Decay (Sequence);
+         Count := Atomic.Decay (Count);
       end loop;
       IO.Put_Line
         ("After 50 iterations, the length of the sequence is"
-         & Atomic.Expanded_Length (Sequence)'Image);
+         & Atomic.Expanded_Length (Count)'Image);
+      for each in 1 .. 50 loop
+         Count := Atomic.Decay (Count);
+      end loop;
+      IO.Put_Line
+        ("After 100 iterations, the length of the sequence is"
+         & Atomic.Expanded_Length (Count)'Image);
    end;
 
    IO.Put_Line ("Now, for slow, brute force!");

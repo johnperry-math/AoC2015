@@ -1,7 +1,7 @@
 --  Advent of Code 2015
 --  John Perry
 --
---  declarations for atomic expansion of the look-and-say sequence
+--  declarations for atomic expansion of the look-and-say Count
 
 pragma Ada_2022;
 
@@ -114,22 +114,26 @@ package Atomic is
        (Index_Type   => Positive,
         Element_Type => Element_Enum);
 
+   type Element_Count is range 0 .. 2**127 - 1;
+
+   type Elem_Count_Array is array (Element_Enum) of Element_Count;
+
    subtype Elem_Vector is Elem_Vectors.Vector;
 
    function Identify_Atom_For
      (Sequence : Common.Positive_Vector) return Element_Enum;
-   --  returns the atom for a given sequence
-   --  my start sequence corresponded to one of the atoms;
+   --  returns the atom for a given Count
+   --  my start Count corresponded to one of the atoms;
    --  i suspect that's true for everyone, but it's possible that
    --  you would need to Decay it into atoms instead.
    --  that would require more work.
 
-   function Decay (Sequence : Elem_Vector) return Elem_Vector;
+   function Decay (Count : Elem_Count_Array) return Elem_Count_Array;
    --  performs one iteration of decay, according to the rules given in
    --  https://en.wikipedia.org/wiki/Look-and-say_sequence#Cosmological_decay
 
-   function Expanded_Length (Sequence : Elem_Vector) return Natural;
-   --  returns the length of the sequence
+   function Expanded_Length (Count : Elem_Count_Array) return Element_Count;
+   --  returns the length of the Count
    --  when expanded back into a Positive_Vector,
    --  without in fact expanding the vector
 

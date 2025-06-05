@@ -263,6 +263,8 @@ Also watch a video of John Conway discussing the sequence, if it interests you.
 * I implemented the
   [cosmological decay](https://en.wikipedia.org/wiki/Look-and-say_sequence#Cosmological_decay)
   optimization.
+* I later revised the cosmological decay optimization to be far, far more efficient:
+  instead of retaining a list of atoms, it now retains a count of atoms.
 
 #### Experience
 Fun and easy.
