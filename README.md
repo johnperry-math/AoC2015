@@ -20,6 +20,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🟥 [Day 12](#-day-11-jsabacusframeworkio): JSAbacusFramework.io
   * 🍽️ [Day 13](#️-day-13-knights-of-the-dinner-table): Knights of the Dinner Table
   * 🦌 [Day 14](#-day-14-reindeer-olympics): Reindeer Olympics
+  * 🍪 [Day 15](#-day-15-science-for-hungry-people): Science for Hungry People
 
 ## Problems in order of appearance
 
@@ -384,3 +385,31 @@ I missed it with the example because both reindeer are resting in the example.
 
 After finally getting that worked out, I moved on to part 2 and discovered that
 you have to step by 1 second, anyway. 🤬🤬🤬 Bye-bye, not-so-elegant solution...
+
+### 🍪 Day 15: Science for Hungry People
+
+Perfect your milk-dunking cookie recipe.
+
+In part 1, you find the recipe with the highest score, rather curiously defined.
+
+In part 2, you find the recipe with the highest score and exactly 500 calories.
+
+#### Unusual tools
+
+* A "double recursion" of sores. I'm not sure that's the right word, but I'm running with it.
+* Brute force where I'm pretty sure an integer linear program would do the trick,
+  but I don't feel like looking up my old thin binding for GLPK.
+
+#### Experience
+
+Once again,
+
+> Premature optimization is the root of all evil. (Donald Knuth)
+
+Maybe there's a clever way to do this,
+but after spending more than an hour trying to come up with one that would solve Part 1,
+I settled for a brute force approach that took me less than 45 minutes for both parts.
+
+I'm not proud of it, but it works.
+Judging by the solutions posted at Reddit, apparently I shouldn't be ashamed, either,
+although I am curious why mine seems so much slower than others'.
