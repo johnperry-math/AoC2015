@@ -21,6 +21,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🍽️ [Day 13](#️-day-13-knights-of-the-dinner-table): Knights of the Dinner Table
   * 🦌 [Day 14](#-day-14-reindeer-olympics): Reindeer Olympics
   * 🍪 [Day 15](#-day-15-science-for-hungry-people): Science for Hungry People
+  * 🔬 [Day 16](#-day-16-aunt-sue): Aunt Sue
 
 ## Problems in order of appearance
 
@@ -415,3 +416,23 @@ I settled for a brute force approach that took me less than 45 minutes for both 
 I'm not proud of it, but it works.
 Judging by the solutions posted at Reddit, apparently I shouldn't be ashamed, either,
 although I am curious why mine seems so much slower than others'.
+
+### 🔬 Day 16: Aunt Sue
+
+Aunt Sue sent you a nice gift, and you'd like to send her a thank-you note.
+Trouble is, you have 500 Aunts Sue.
+The gift is a machine that just so happens to tell you something about her.
+
+In part 1, you find the aunt who matches the output.
+
+In part 2, you find the aunt who matches the output,
+now that you've actually read the manual. 🙄
+
+#### Unuusal tools
+
+Used `Enumeration_IO` and it was surprisingly easy, given the mixed casing.
+I have to make more use of that!
+
+#### Experience
+
+Fun and easy.
