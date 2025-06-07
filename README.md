@@ -22,6 +22,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🦌 [Day 14](#-day-14-reindeer-olympics): Reindeer Olympics
   * 🍪 [Day 15](#-day-15-science-for-hungry-people): Science for Hungry People
   * 🔬 [Day 16](#-day-16-aunt-sue): Aunt Sue
+  * 🥛 [Day 17](#-day-17-no-such-thing-as-too-much): No Such Thing as Too Much
 
 ## Problems in order of appearance
 
@@ -436,3 +437,33 @@ I have to make more use of that!
 #### Experience
 
 Fun and easy.
+
+### 🥛 Day 17: No Such Thing as Too Much
+
+The elves ordered way too much eggnog.
+
+In part 1, you figure out how many ways you can completely fill
+a set of containers with the eggnog.
+
+In part 2, you figure out the minimum number of containers
+you can fill completely, then count the ways you can fill them.
+
+And yes, I do indeed endorse the name of this puzzle.
+If only I could drink more eggnog!
+
+#### Unusual tools
+
+Nothing unusual.
+
+#### Experience
+
+Fun fun fun! Not easy. -- Well, it _should_ have been easy,
+but  I made some small mistake in part 1,
+so that I gave the wrong answer twice,
+while in part 2 I botched my first approach that was supposed to track
+only the _number of minimal_ combinations, and in the attempt to convert
+to record the successful combinations I broke my solution to part 1.
+
+I finally got it to record the successful combinations,
+so I should be able to improve it to track only the number of minimal ones,
+but it's gotten late, so I'll wait until another time, if at all.
