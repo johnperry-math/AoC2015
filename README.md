@@ -23,6 +23,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🍪 [Day 15](#-day-15-science-for-hungry-people): Science for Hungry People
   * 🔬 [Day 16](#-day-16-aunt-sue): Aunt Sue
   * 🥛 [Day 17](#-day-17-no-such-thing-as-too-much): No Such Thing as Too Much
+  * 💡 [Day 18](#-day-18-like-a-gif-for-your-yard): Like a GIF For Your Yard
 
 ## Problems in order of appearance
 
@@ -467,3 +468,23 @@ to record the successful combinations I broke my solution to part 1.
 I finally got it to record the successful combinations,
 so I should be able to improve it to track only the number of minimal ones,
 but it's gotten late, so I'll wait until another time, if at all.
+
+### 💡 Day 18: Like a GIF For Your Yard
+
+It's another light show, only with fewer lights and animation.
+
+In part 1, you play Conway's game of Life.
+
+In part 2, you repeat, but keep the corners lit.
+
+#### Unusual tools
+
+Nothing unusual at this point. (Same code solves both parts.)
+
+#### Experience
+
+Fun and easy, but a little confusing.
+The example has the corners already lit for part 2, whereas my input does not.
+How does one proceed in this case: wait until the corners light up,
+then keep them lit? Or manually light them?
+I chose the latter and it worked out.
