@@ -516,3 +516,5 @@ Fun, not easy.
   In retrospect I feel pretty stupid: I probably would have needed help anyway,
   but I really should have thought to _reduce_ the target to the source,
   rather than try to _build_ the target from the source.
+* My solution to Part 2 is not the optimal solution, by the way.
+  Apparently you can just work out a nice mathematical formula for it!
