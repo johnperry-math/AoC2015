@@ -24,6 +24,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🔬 [Day 16](#-day-16-aunt-sue): Aunt Sue
   * 🥛 [Day 17](#-day-17-no-such-thing-as-too-much): No Such Thing as Too Much
   * 💡 [Day 18](#-day-18-like-a-gif-for-your-yard): Like a GIF For Your Yard
+  * 💉 [Day 19](#-day-19-medicine-for-rudolph): Medicine for Rudolph
 
 ## Problems in order of appearance
 
@@ -488,3 +489,30 @@ The example has the corners already lit for part 2, whereas my input does not.
 How does one proceed in this case: wait until the corners light up,
 then keep them lit? Or manually light them?
 I chose the latter and it worked out.
+
+### 💉 Day 19: Medicine for Rudolph
+
+We need to compound a medicine for Rudolph, who is sick.
+
+In part 1, we calibrate a machine by determining how many distinct molecules
+can be created when you perform a replacement on the medicine molecule.
+(Essentially, how many new sequences can be performed in one step
+from a given sequence.)
+
+In part 2, we determine how many steps it will take
+to create the medicine molecule when we start from an electron.
+
+#### Unusual tools
+
+Nothing unusual.
+
+#### Experience
+
+Fun, not easy.
+* Part 1 wasn't a problem; it just took a while.
+* I took a pretty stupid approach to Part 2, and when I realized
+  it would take an unreasonable amount of time
+  I just looked up other solutions.
+  In retrospect I feel pretty stupid: I probably would have needed help anyway,
+  but I really should have thought to _reduce_ the target to the source,
+  rather than try to _build_ the target from the source.
