@@ -25,6 +25,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🥛 [Day 17](#-day-17-no-such-thing-as-too-much): No Such Thing as Too Much
   * 💡 [Day 18](#-day-18-like-a-gif-for-your-yard): Like a GIF For Your Yard
   * 💉 [Day 19](#-day-19-medicine-for-rudolph): Medicine for Rudolph
+  * ♾️ [Day 20](#️-day-20-infinite-elves-and-infinite-houses): Infinite Elves and Infinite Houses
 
 ## Problems in order of appearance
 
@@ -518,3 +519,27 @@ Fun, not easy.
   rather than try to _build_ the target from the source.
 * My solution to Part 2 is not the optimal solution, by the way.
   Apparently you can just work out a nice mathematical formula for it!
+
+### ♾️ Day 20: Infinite Elves and Infinite Houses
+
+Now the _elves_ are delivering presents.
+
+In part 1, determine the first house to receive a certain number of presents
+when infinite elves deliver 10 presents to infinite houses,
+with each elf starting at his corresponding number.
+
+In part 2, repeat when infinite elves deliver **11** presents to **50** houses,
+with each elf still starting at his corresponding number.
+
+#### Unusual tools
+
+The solution to parts 1 and 2 is identical. That isn't really unusual by now,
+but I had to be a little clever with the terminating condition for part 2.
+
+#### Experience
+
+Easy but a little uninspiring for Day 20.
+I was expecting the solution to require something not especially straightforward,
+so I botched Part 1 at first by trying to be clever:
+the solution was far too slow and experienced overflow.
+Turns out a straightforward, brute force solution works today.
