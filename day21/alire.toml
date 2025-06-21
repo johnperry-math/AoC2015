@@ -1,0 +1,10 @@
+name = "day21"
+description = "2015 Advent of Code in Ada, Day 21"
+version = "0.1.0-dev"
+
+authors = ["John Perry"]
+maintainers = ["John Perry <devotus@yahoo.com>"]
+maintainers-logins = ["johnperry-math"]
+licenses = "CC-BY-SA-3.0"
+website = ""
+tags = ["advent-of-code", "ada", "2015"]

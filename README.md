@@ -26,6 +26,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 💡 [Day 18](#-day-18-like-a-gif-for-your-yard): Like a GIF For Your Yard
   * 💉 [Day 19](#-day-19-medicine-for-rudolph): Medicine for Rudolph
   * ♾️ [Day 20](#️-day-20-infinite-elves-and-infinite-houses): Infinite Elves and Infinite Houses
+  * 🎮 [Day 21](#-day-21-rpg-simulator-20xx): RPG Simulator 20XX
 
 ## Problems in order of appearance
 
@@ -543,3 +544,26 @@ I was expecting the solution to require something not especially straightforward
 so I botched Part 1 at first by trying to be clever:
 the solution was far too slow and experienced overflow.
 Turns out a straightforward, brute force solution works today.
+
+### 🎮 Day 21: RPG Simulator 20XX
+
+A kid needs help beating the boss in a new video game.
+What equipment should he buy?
+
+In part 1, you determine the least expensive combination of equipment
+where the kid wins.
+
+In part 2, you determine the most expensive combination of equipment
+where the kid loses. (Don't ask.)
+
+#### Unusual tools
+
+Nothing unusual.
+
+#### Experience
+
+Fun, not quite as easy as some others.
+I made a dumb mistake on each part:
+* For part 1, I first implemented the recursion
+  without actually reducing the number of items after choosing one.
+* For part 2, I performed some copy-pasta on the `Adjust` function.
