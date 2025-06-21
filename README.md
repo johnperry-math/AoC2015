@@ -27,6 +27,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 💉 [Day 19](#-day-19-medicine-for-rudolph): Medicine for Rudolph
   * ♾️ [Day 20](#️-day-20-infinite-elves-and-infinite-houses): Infinite Elves and Infinite Houses
   * 🎮 [Day 21](#-day-21-rpg-simulator-20xx): RPG Simulator 20XX
+  * 🧙 [Day 22](#-day-22-wizard-simulator-20xx): Wizard Simulator 20XX
 
 ## Problems in order of appearance
 
@@ -558,7 +559,7 @@ where the kid loses. (Don't ask.)
 
 #### Unusual tools
 
-Nothing unusual.
+* Ada's enumerated types with their subranges helped out a lot here!
 
 #### Experience
 
@@ -567,3 +568,50 @@ I made a dumb mistake on each part:
 * For part 1, I first implemented the recursion
   without actually reducing the number of items after choosing one.
 * For part 2, I performed some copy-pasta on the `Adjust` function.
+
+### 🧙 Day 22: Wizard Simulator 20XX
+
+The same kid needs help with a different game.
+What spells should he cast?
+
+In part 1, you help the kid determine the least amount of "mana" required
+to win the easy mode.
+
+In part 2, you repeat with the hard mode.
+
+#### Unusual tools
+
+* `Ada.Containers.Unbounded_Priority_Queue` finally came through
+* Pretty sure this is the first 2015 puzzle where I used Breadth-First Search.
+
+#### Experience
+
+Fun, but difficult. A lot of details here and there that kept tripping me up.
+In fact, I even managed to get the correct answer for both parts 1 and 2
+despite having a bug in the program.
+I might not have solved it even as early as I did without
+[this Python solution](https://www.reddit.com/r/adventofcode/comments/3xspyl/comment/cy927kk/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+to help root out my misconceptions.
+(FWIW I merely comparely dequeued state values.)
+
+Various mistakes I made at one point or another:
+* I either missed the statement,
+
+  >  Effects apply at the start of both the player's turns and the boss' turns.
+
+  or I misudnerstood it.
+* I treated Magic Missile and Drain as effects, when that isn't really accurate.
+  (In retrospect, I'm not entirely sure why it shouldn't work,
+  but now that I have it working I don't care to try again.)
+* I had the wrong value for one spell's bonuses.
+* I applied a minimum of 1 damage to the boss when applying effects.
+* I applied the spell configuration to the boss.
+  In and of itself that's not necessarily wrong, as the boss has no spells,
+  so it shouldn't affect him at all.
+  Unfortunately, the effect of my implementation was that the boss ended up
+  doing 0 Damage.
+
+My solution is mysteriously "slow".
+I may need to prune states that have already been observed,
+but I tried that once and either I implemented it wrong
+or it provided less benefit than cost!
