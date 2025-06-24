@@ -28,6 +28,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * ♾️ [Day 20](#️-day-20-infinite-elves-and-infinite-houses): Infinite Elves and Infinite Houses
   * 🎮 [Day 21](#-day-21-rpg-simulator-20xx): RPG Simulator 20XX
   * 🧙 [Day 22](#-day-22-wizard-simulator-20xx): Wizard Simulator 20XX
+  * 🔒 [Day 23](#-day-23-opening-the-turing-lock): Opening the Turing Lock
 
 ## Problems in order of appearance
 
@@ -615,3 +616,25 @@ My solution is mysteriously "slow".
 I may need to prune states that have already been observed,
 but I tried that once and either I implemented it wrong
 or it provided less benefit than cost!
+
+### 🔒 Day 23: Opening the Turing Lock
+
+A child is having trouble making sense of the output
+of a program on her new computer.
+
+In part 1, you figure out what the program's output should be.
+
+In part 2, you figure out what the program's output would be
+when one of the input parameters changes.
+
+#### Unusual tools
+
+None in particular.
+
+#### Experience
+
+Fun and easy, but it would have been less annoying
+had the puzzle master specified that `jie` and `jio`
+step forward one instruction when they _don't_ jump.
+Granted, that's the only thing that really makes sense,
+but I wasted too much time trying to see whether he specified it somewhere.
