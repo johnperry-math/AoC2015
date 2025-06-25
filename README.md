@@ -29,6 +29,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🎮 [Day 21](#-day-21-rpg-simulator-20xx): RPG Simulator 20XX
   * 🧙 [Day 22](#-day-22-wizard-simulator-20xx): Wizard Simulator 20XX
   * 🔒 [Day 23](#-day-23-opening-the-turing-lock): Opening the Turing Lock
+  * ⚖️ [Day 24](#️-day-24-it-hangs-in-the-balance): It Hangs in the Balance
 
 ## Problems in order of appearance
 
@@ -638,3 +639,53 @@ had the puzzle master specified that `jie` and `jio`
 step forward one instruction when they _don't_ jump.
 Granted, that's the only thing that really makes sense,
 but I wasted too much time trying to see whether he specified it somewhere.
+
+### ⚖️ Day 24: It Hangs in the Balance
+
+Santa needs to balance the packages equally on his sleigh.
+There can be more than one way to balance them,
+and he needs the front to have the smallest number of packages **and**,
+when there is more than one such, the smallest "quantum entanglement",
+which is the product of the packages' weight.
+
+In part 1, you help Santa divide the packages into 3 compartments.
+
+In part 2, it's 4 compartments.
+
+#### Unusual tools
+
+* Custom number type because some entanglement values grew too large
+  even for 64-bit values!
+* Caching several values turned out to be useful here.
+  (Maybe not _everything_ I cached, but certainly some of it.)
+
+#### Experience
+
+Fun, but not easy. The brute force approach definitely won't work here.
+My input had 211,830 subsets that sum to 1/3 of the total weight,
+and you can't just take any old subset, since they may not have 2 (or 3)
+matching subsets:
+
+> Only when all three groups weigh exactly the same amount
+> will the sleigh be able to fly.
+
+I dunno, maybe that doesn't matter, but when I first implemented it
+without checking that, and took the grouping with
+the smallest number of packages, breaking ties by smallest entanglement,
+I didn't have the correct answer.
+Perhaps I unknowingly fixed something later on.
+
+I lost a bit of time on a bug that stopped me from finding
+all the distributions, and on another where
+I summed the remaining weights incorrectly,
+but I found and fixed those pretty easily.
+
+After that it was a matter of finding the correct way to:
+* prune duplicate groupings;
+* cut off invalid search paths;
+* arrange the resulting subsets in such a way as to find quickly
+  the smallest one to meet the requirements.
+
+...and I worked that out on my own. My solution isn't terribly fast;
+it takes a few seconds, so I added some output to indicate
+its current state, but I'm happy with it.
