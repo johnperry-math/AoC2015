@@ -30,6 +30,7 @@ Santa's snow machine isn't working, and we're going to help him do it.
   * 🧙 [Day 22](#-day-22-wizard-simulator-20xx): Wizard Simulator 20XX
   * 🔒 [Day 23](#-day-23-opening-the-turing-lock): Opening the Turing Lock
   * ⚖️ [Day 24](#️-day-24-it-hangs-in-the-balance): It Hangs in the Balance
+  * ❄️ [Day 25](#️-day-25-let-it-snow): Let It Snow
 
 ## Problems in order of appearance
 
@@ -689,3 +690,23 @@ After that it was a matter of finding the correct way to:
 ...and I worked that out on my own. My solution isn't terribly fast;
 it takes a few seconds, so I added some output to indicate
 its current state, but I'm happy with it.
+
+### ❄️ Day 25: Let It Snow
+
+Help Santa start up his weather machine.
+
+In part 1, you determine the code necessary to start the weather machine.
+
+Part 2 is free, as usual -- so long as you've completed the other 24 days!
+
+#### Unusual tools
+
+None in particular.
+
+#### Experience
+
+Fun and easy, if a little disappointing, in that
+I was ready to use some number theory to speed through the list of values,
+but there was no need! My number was too far
+from where I could use Fermat's Little Theorem, and a brute force approach
+terminates in less than a second, anyway.
